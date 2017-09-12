@@ -2,8 +2,8 @@
   "settings": {
   },
   "rules": {
-    "pull_request": "orta/peril-bootstrap@dangerfiles/pr.js",
-    "issues": "orta/peril-bootstrap@dangerfiles/issue.js"
+    "pull_request": "studiosnack/peril-config@dangerfiles/pr.js",
+    "issues": "studiosnack/peril-config@dangerfiles/issue.js"
   },
   "repos" : {
   }
