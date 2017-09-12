@@ -1,13 +1,5 @@
-import {message, warn} from "danger";
+// @flow
 
-if (danger.github.pr.deletions > danger.github.pr.additions) {
-  message("🔥")
-}
+import {message} from "danger"
 
-const packageChanged = danger.git.modified_files.includes('package.json');
-const lockfileChanged = danger.git.modified_files.includes('yarn.lock');
-if (packageChanged && !lockfileChanged) {
-  const message = 'Changes were made to package.json, but not to yarn.lock';
-  const idea = 'Perhaps you need to run `yarn install`?';
-  warn(`${message} - <i>${idea}</i>`);
-}
+message("Hello from Peril on your PR.")
